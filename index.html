@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Memory Quest!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./assets/favi.png" type="image/x-icon">
+</head>
+
+<body>
+    <h1>Memory Quest</h1>
+    <div class="container">
+        <div class="left-section">
+            <div>
+                <button id="start-button">Start Game</button>
+                <div class="timer"><i class="fas fa-clock"></i> Time: <span id="timer">60 sec</span></div>
+                <div class="score">Best Score: <span id="best-score">0</span></div>
+                <div class="score">Current Score: <span id="score">0</span></div>
+                <div class="moves">Moves: <span id="move-counter">0</span></div>
+                <button id="reset-button">Reset Game</button>
+            </div>
+        </div>
+
+        <div class="right-section">
+            <div class="cards"></div>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p id="modal-text"></p>
+        </div>
+    </div>
+
+</body>
+
+</html>
